@@ -8,6 +8,7 @@ namespace PedidosApp
 {
     public static class EntregaFactory
     {
+
         public static IMetodoEntrega CrearEntrega(string tipoProducto, bool urgente, double peso)
         {
             if (tipoProducto == "tecnología" && urgente)
