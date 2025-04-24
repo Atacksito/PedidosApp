@@ -8,6 +8,7 @@ namespace PedidosApp
 {
     public interface IMetodoEntrega
     {
+
         double CalcularCosto(int km);
         string TipoEntrega();
     }
