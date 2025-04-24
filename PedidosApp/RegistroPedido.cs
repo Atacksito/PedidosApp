@@ -8,6 +8,7 @@ namespace PedidosApp
 {
     public sealed class RegistroPedidos
     {
+
         private static RegistroPedidos _instancia;
         private static readonly object _lock = new object();
         public List<Pedido> Pedidos { get; private set; }
