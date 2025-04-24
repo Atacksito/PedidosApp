@@ -86,7 +86,7 @@
             // 
             this.chkUrgente.AutoSize = true;
             this.chkUrgente.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic);
-            this.chkUrgente.Location = new System.Drawing.Point(336, 98);
+            this.chkUrgente.Location = new System.Drawing.Point(378, 149);
             this.chkUrgente.Name = "chkUrgente";
             this.chkUrgente.Size = new System.Drawing.Size(79, 19);
             this.chkUrgente.TabIndex = 4;
