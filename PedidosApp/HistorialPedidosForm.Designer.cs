@@ -2,46 +2,44 @@
 {
     partial class HistorialPedidosForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.DataGridView dataGridViewPedidos;
+        private System.Windows.Forms.ComboBox comboBoxFiltro;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
+            this.comboBoxFiltro = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
             this.SuspendLayout();
-            // 
+
+            // comboBoxFiltro
+            this.comboBoxFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFiltro.FormattingEnabled = true;
+            this.comboBoxFiltro.Location = new System.Drawing.Point(12, 12);
+            this.comboBoxFiltro.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxFiltro.SelectedIndexChanged += new System.EventHandler(this.comboBoxFiltro_SelectedIndexChanged);
+
+            // dataGridViewPedidos
+            this.dataGridViewPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedidos.Location = new System.Drawing.Point(12, 50);
+            this.dataGridViewPedidos.Size = new System.Drawing.Size(560, 300);
+            this.dataGridViewPedidos.Name = "dataGridViewPedidos";
+
             // HistorialPedidosForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.comboBoxFiltro);
+            this.Controls.Add(this.dataGridViewPedidos);
             this.Name = "HistorialPedidosForm";
-            this.Text = "HistorialPedidosForm";
-            this.Load += new System.EventHandler(this.HistorialPedidosForm_Load);
+            this.Text = "Historial de Pedidos";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).EndInit();
             this.ResumeLayout(false);
-
         }
-
-        #endregion
     }
 }
