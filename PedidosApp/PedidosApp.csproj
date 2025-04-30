@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistorialPedidosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialPedidosForm.Designer.cs">
+      <DependentUpon>HistorialPedidosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="lMetodoEntrega.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Program.cs" />
@@ -63,6 +69,9 @@
     <Compile Include="RegistroPedido.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialPedidosForm.resx">
+      <DependentUpon>HistorialPedidosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
